@@ -9,7 +9,7 @@ declare module 'gatsby-plugin-intl' {
   export const changeLocale: (language: string, to?: string) => void;
   
   import { IntlShape } from "react-intl";
-  interface GatsbyPluginIntlShape extends IntlShape {
+  export interface GatsbyPluginIntlShape extends IntlShape {
     language: string;
     languages: string[];
     routed: boolean;
